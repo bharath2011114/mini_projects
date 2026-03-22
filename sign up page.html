@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width-deivce-width", initial-scale="1.0">
+ <style>
+body{
+font-family:Arial;
+background:#70c6c9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+form{
+background:white;
+padding:30px;
+width:400px;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+}
+h2{
+text-align:center;
+}
+label{
+display:block;
+margin-top:10px;
+}
+input,select{
+width:100%;
+padding:8px;
+margin-top:5px;
+}
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:#3c82b4;
+color:white;
+border:none;
+cursor:pointer;
+}
+button:hover{
+background:#256896;
+}
+fieldset{
+margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+<form>
+<h2>Sign Up</h2>
+<fieldset>
+<legend>Personal Details</legend>
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+<label>Email</label>
+<input type="email" placeholder="Enter your email" required>
+<label>Phone Number</label>
+<input type="tel" pattern="[0-9]{10}" placeholder="10 digit phone number"
+required>
+<label>Password</label>
+<input type="password" minlength="8" placeholder="Minimum 8 characters" required>
+<label>Confirm Password</label>
+<input type="password" minlength="8" placeholder="Re-enter password" required>
+<label>Gender</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+</fieldset>
+<fieldset>
+<legend>Workshop Interests</legend>
+<input type="checkbox"> Programming<br>
+<input type="checkbox"> AI/ML<br>
+<input type="checkbox"> Web Development<br>
+<input type="checkbox"> Cybersecurity
+</fieldset>
+<button type="submit">Sign Up</button>
+</form>
+</body>
+</html>

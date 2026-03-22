@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width-deivce-width", initial-scale="1.0">
+ <style>
+    body{
+font-family:Arial;
+background:#70c6c9;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+margin:0;
+}
+form{
+background:white;
+padding:30px;
+width:350px;
+border-radius:8px;
+box-shadow:0 0 10px gray;
+}
+h2{
+text-align:center;
+}
+label{
+display:block;
+margin-top:10px;
+}
+input{
+width:100%;
+padding:8px;
+margin-top:5px;
+}
+button{
+margin-top:15px;
+padding:10px;
+width:100%;
+background:#3c82b4;
+color:white;
+border:none;
+cursor:pointer;
+}
+button:hover{
+background:#256896;
+}
+.links{
+margin-top:10px;
+font-size:14px;
+}
+ </style>
+
+</head>
+
+<body>
+<form>
+<h2>Login</h2>
+<label>Email</label>
+<input type="email" required>
+<label>Password</label>
+<input type="password" required>
+<label for="remember">Remember Me</label>
+<input type="checkbox" id="remember">
+<button type="submit">Login</button>
+<div class="links">
+<a href="#">Forgot Password?</a><br>
+<a href="signup.html">Don't have an account? Sign Up</a>
+</div>
+</form>
+</body>
+</html>

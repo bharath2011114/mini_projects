@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta name="viewport" content="width-deivce-width", initial-scale="1.0">
+ <style>
+    body{
+ font-family: Arial;
+ background-color: #70c6c9;
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ height:100vh;
+ margin:0;
+}
+.container{
+ width: 1100px;
+ margin: 100px auto;
+ display: flex;
+ border-radius: 10px;
+ justify-content: center;
+}
+.left{
+ width: 50%;
+ padding: 40px;
+ color: white;
+ background-color: #3c82b4;
+ justify-content: center;
+}
+.left h2{
+ color: white;
+ margin-bottom: 20px;
+}
+.left p{
+ margin-bottom:20px;
+ line-height:1.6;
+}
+.left button{
+ padding: 10px 15px;
+ color: black;
+ background-color: white;
+ margin-top: 10px;
+ border: none;
+ cursor: pointer;
+}
+.right{
+ width: 50%;
+ padding: 40px;
+ background-color: white;
+ justify-content: center;
+
+}
+.right h2{
+ color: #3c82b4;
+ margin-bottom: 20px;
+}
+.names{
+ display: flex;
+ gap: 10px;
+ margin-bottom: 10px;
+ width: auto;
+ justify-content: center;
+}
+.field{
+ display:flex;
+ flex-direction:column;
+ width:100%;
+}
+.field label{
+ margin-bottom:5px;
+ font-size:14px;
+}
+.field input{
+ padding:10px;
+ border:1px solid #ccc;
+}
+.email{
+ margin-bottom: 10px;
+}
+.email input{
+ width:100%;
+ padding:8px;
+ margin-bottom:10px;
+ justify-content: center;
+}
+.password{
+ display: flex;
+ gap: 10px;
+ margin-bottom: 10px;
+ width: auto;
+ justify-content: center;
+}
+.check{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ margin-bottom:20px;
+ font-size:14px;
+}
+.register{
+ color: white;
+ background-color: #3c82b4;
+ padding: 10px 15px;
+ border: none;
+ cursor: pointer;
+}
+ </style>
+
+</head>
+
+<body>
+<div class="container">
+ <div class="left">
+ <h2>INFORMATION</h2>
+ <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ <p><b>Eu ultrices:</b> Vitae auctor eu augue ut.Malesuada
+ nunc vel risus commodo viverra.Praesent
+ elementum facilisis leo vel.</p>
+ <button>Have An Account</button>
+ </div>
+ <div class="right">
+    <h2>REGISTER FORM</h2>
+ <form>
+ <div class="names">
+ <div class="field">
+ <label for="fname">First Name</label>
+ <input type="text" id="fname" name="fname" placeholder="Enter your
+First Name">
+ </div>
+ <div class="field">
+ <label for="lname">Last Name</label>
+ <input type="text" id="lname" name="lname" placeholder="Enter your
+Last Name">
+ </div>
+ </div>
+ <div class="email">
+ <label for="email">Your Email</label>
+ <input type="text" id="email" name="email" placeholder="Enter the
+valid mail">
+ </div>
+ <div class="password">
+ <div class="field">
+ <label for="pass">Password</label>
+ <input type="password" id="pass" name="pass" placeholder="Enter the
+password">
+ </div>
+ <div class="field">
+ <label for="cpass">Comfirm Password</label>
+ <input type="password" id="cpass" name="cpass" placeholder="retype
+your password">
+</div>
+ </div>
+ <div class="check">
+ <input type="checkbox" id="terms" name="terms">
+ <label for="terms">I agree to the <u style="color: rgb(23, 180,
+232);">Terms and Conditions</u></label>
+ </div>
+ <button class="register">Register</button>
+ </form>
+ </div>
+</div>
+</body>
+</html>
